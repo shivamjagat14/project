@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(135deg ,purple,skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+#age_calcu{
+    color: yellow;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.age_calculater{
+    margin-bottom: 20px;
+}
+#input_box{ 
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.227);
+    border-radius: 5px;
+}
+#input{
+    width: 270px;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+}
+#input[type="date"]{
+    padding: 0 15px;
+}
+#calculate_btn{
+    height: 50px; 
+    width: 100px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: yellow;
+}
+#calculate_btn:active{
+    transform: scale(0.9);
+    transition: 0.20s;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    font-size: larger;
+}
+
+@media only screen and (max-width:426px){
+    #input{
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        border:none;
+        cursor: pointer;
+    }
+   
+    #input_box{
+    margin: 2px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.227);
+    border-radius: 5px;
+    }
+    #calculate_btn{
+        height: 50px; 
+        width: 65px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background: yellow;
+    }
+    #age_calcu h1{
+        font-weight: bold;
+        font-size: small;
+    }
+}
+ @media only screen and(min-width:375px){
+    #input_box{
+        margin: 2px;
+        padding: 10px;
+        background: #000;
+        border-radius: 5px;
+    }
+ }
+ @media only screen and(max-width:425px){
+    #input_box{
+        margin: 2px;
+        padding: 10px;
+        background: #000;
+        border-radius: 5px;
+    }
+ }
